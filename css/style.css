@@ -12,8 +12,8 @@
 
 .container{
     position: relative;
-
 }
+
 
 .container .slide-container .slide{
 min-height: 100vh;
@@ -41,9 +41,18 @@ padding-bottom: 70px;
     flex: 1 1 500px;
 }
 
-.container .slide-container .slide .image img{
-    width:100%;
-    animation: slideImage .4s linear;
+.container .slide-container .slide .image img {
+    width: 100%;
+    animation: slideImage 0.4s linear;
+    transition: transform 0.3s ease-in-out; /* Added transition property */
+
+    /* Add the following styles for the initial state */
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.container .slide-container .slide .image img:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
 }
 
 
