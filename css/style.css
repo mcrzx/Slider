@@ -55,7 +55,9 @@ padding-bottom: 70px;
     transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
 }
 
-
+.container .slide-container .slide .image img:hover {
+    transform: rotate(90deg); /* You can adjust the degree of rotation as needed */
+}
 @keyframes slideImage{
     0%{
         opacity: 0;
@@ -153,6 +155,10 @@ background:#333;
     background:Linear-gradient(90deg, #f9f9f9 70%,#b4b1ad 30.1% );
 }.container .slide-container:nth-child(16) .slide{
     background:Linear-gradient(90deg, #f9f9f9 70%,#ff9999 30.1% );
+}.container .slide-container:nth-child(16) .slide{
+    background:Linear-gradient(90deg, #f9f9f9 70%,#99c9ff 30.1% );
+}.container .slide-container:nth-child(16) .slide{
+    background:Linear-gradient(90deg, #f9f9f9 70%,#ffb999 30.1% );
 }
 
 .container #prev,
